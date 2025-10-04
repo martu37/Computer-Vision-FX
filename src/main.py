@@ -9,7 +9,7 @@ output_folder = "videos_detected"
 os.makedirs(output_folder, exist_ok=True)
 
 # Nombre del video de entrada (el usuario solo cambia esto)
-input_filename = "Video_Muestra.mov"  #          <-- CAMBIAR ESTO
+input_filename = "walking_crowd.mp4"  #          <-- CAMBIAR ESTO
 
 # Rutas completas
 input_path = os.path.join(input_folder, input_filename)
@@ -55,7 +55,7 @@ with tqdm(total=total_frames, desc="Procesando video", unit="frame") as pbar:
             break
 
         results = model(frame)
-        annotated_frame = results[0].plot(line_width=3, font_size=16, labels=True, conf=True)
+        annotated_frame = results[0].plot(line_width=2, font_size=12, labels=True, conf=True)
         out.write(annotated_frame)
         cv2.imshow("YOLO Detection", annotated_frame)
         pbar.update(1)

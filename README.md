@@ -1,4 +1,4 @@
-<h1>Computer Vision Effect</h1>
+<h1>Computer Vision FX</h1>
 <p align="center">Este es un <b>proyecto personal</b> que aplica detección de objetos con YOLOv8 sobre videos para crear un efecto estético de visión por computadora. <br>
 El objetivo es más enfocado a la estética y lo creativo que de análisis de datos: resalta objetos en el video con cuadros y etiquetas</p>
 <pre>
